@@ -732,5 +732,12 @@ setInterval(() => {
 ">
   By Kev v.1 01/05/2026 🚀
 </div>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('SW registrado'))
+    .catch(err => console.log('Error SW', err));
+}
+</script>  
 </body>
 </html>
